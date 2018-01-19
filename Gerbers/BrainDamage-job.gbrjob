@@ -1,0 +1,25 @@
+G04 Gerber job file with board parameters*
+%TF.FileFunction,JobInfo*%
+%TF.Part,SinglePCB*%
+G04 Single PCB fabrication instructions*
+%TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-835c19f~60~ubuntu16.04.1*%
+%TF.CreationDate,2018-01-19T17:15:27+02:00*%
+%TF.ProjectId,BrainDamage,427261696E44616D6167652E6B696361,rev?*%
+%MOMM*%
+G04 Overall board parameters*
+%TJ.B.Size.X,100.105*%
+%TJ.B.Size.Y,100.105*%
+%TJ.B.LayerNum,2*%
+%TJ.B.Overall.Thickness,1.600*%
+%TJ.B.Legend.Present,No*%
+%TJ.B.SolderMask.Present,No*%
+G04 board design rules*
+%TJ.D.PadToPad.Out,0.250*%
+%TJ.D.PadToTrack.Out,0.250*%
+%TJ.D.TrackToTrack.Out,0.250*%
+%TJ.D.MinLineWidth.Out,0.250*%
+%TJ.D.TrackToRegion.Out,0.508*%
+%TJ.D.RegionToRegion.Out,0.508*%
+G04 Layer Structure*
+%TJ.L."Copper,L1,Top",Positive,BrainDamage-F.Cu.gtl*%
+M02*
