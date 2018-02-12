@@ -1,40 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:PCA9685-TSSOP
-LIBS:ch34x
+EESchema Schematic File Version 4
 LIBS:BrainDamage-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -61,7 +27,7 @@ MISO
 Text Label 9350 2000 0    60   ~ 0
 MOSI
 $Comp
-L SW_PUSH SW1
+L BrainDamage-rescue:SW_PUSH-RESCUE-BrainDamage SW1
 U 1 1 572D2507
 P 3900 7150
 F 0 "SW1" H 4050 7260 50  0000 C CNN
@@ -72,7 +38,7 @@ F 3 "~" H 3900 7150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 572D2508
 P 3200 7300
 F 0 "#PWR01" H 3200 7300 30  0001 C CNN
@@ -85,7 +51,7 @@ $EndComp
 Text Label 4350 7150 0    60   ~ 0
 RESET
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 572D2509
 P 5800 1400
 F 0 "#PWR02" H 5800 1400 30  0001 C CNN
@@ -104,7 +70,7 @@ RESET
 Text Label 6200 4950 0    60   ~ 0
 MOSI
 $Comp
-L LED-RESCUE-uselessPCB D1
+L BrainDamage-rescue:LED-RESCUE-uselessPCB-RESCUE-BrainDamage D1
 U 1 1 572D250B
 P 4350 5750
 F 0 "D1" H 4350 5850 50  0000 C CNN
@@ -115,7 +81,7 @@ F 3 "~" H 4350 5750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-RESCUE-uselessPCB R1
+L BrainDamage-rescue:R-RESCUE-uselessPCB-RESCUE-BrainDamage R1
 U 1 1 572D250C
 P 3600 5750
 F 0 "R1" V 3680 5750 40  0000 C CNN
@@ -126,7 +92,7 @@ F 3 "~" H 3600 5750 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 572D250D
 P 4750 5950
 F 0 "#PWR03" H 4750 5950 30  0001 C CNN
@@ -138,7 +104,7 @@ F 3 "" H 4750 5950 60  0000 C CNN
 $EndComp
 NoConn ~ 7300 2300
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 572D2510
 P 6300 6200
 F 0 "#PWR04" H 6300 6200 30  0001 C CNN
@@ -149,7 +115,7 @@ F 3 "" H 6300 6200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 572D2511
 P 7000 4150
 F 0 "#PWR05" H 7000 4150 30  0001 C CNN
@@ -176,7 +142,7 @@ XTAL1
 Text Label 9350 2400 0    60   ~ 0
 XTAL2
 $Comp
-L CONN_01X03 S7
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S7
 U 1 1 572D2514
 P 1650 850
 F 0 "S7" H 1650 1050 50  0000 C CNN
@@ -187,7 +153,7 @@ F 3 "" H 1650 850 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S6
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S6
 U 1 1 572D2515
 P 2200 850
 F 0 "S6" H 2200 1050 50  0000 C CNN
@@ -198,7 +164,7 @@ F 3 "" H 2200 850 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S5
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S5
 U 1 1 572D2516
 P 2750 850
 F 0 "S5" H 2750 1050 50  0000 C CNN
@@ -211,7 +177,7 @@ $EndComp
 Text Label 5400 5750 0    60   ~ 0
 XTAL1
 $Comp
-L ATMEGA328P-A IC1
+L BrainDamage-rescue:ATMEGA328P-A-RESCUE-BrainDamage IC1
 U 1 1 572D2524
 P 8200 2800
 F 0 "IC1" H 7450 4050 40  0000 L BNN
@@ -226,7 +192,7 @@ ADC6
 Text Label 7000 3150 0    60   ~ 0
 ADC7
 $Comp
-L CONN_01X08 P8
+L BrainDamage-rescue:CONN_01X08-RESCUE-BrainDamage P8
 U 1 1 572D29AA
 P 10600 2700
 F 0 "P8" H 10600 3150 50  0000 C CNN
@@ -239,7 +205,7 @@ $EndComp
 Text Label 5400 6150 0    60   ~ 0
 XTAL2
 $Comp
-L CRYSTAL_SMD X1
+L BrainDamage-rescue:CRYSTAL_SMD-RESCUE-BrainDamage X1
 U 1 1 572D388E
 P 5950 5950
 F 0 "X1" H 5950 6040 50  0000 C CNN
@@ -250,7 +216,7 @@ F 3 "" H 5950 5950 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S4
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S4
 U 1 1 59DC720E
 P 3300 850
 F 0 "S4" H 3300 1050 50  0000 C CNN
@@ -261,7 +227,7 @@ F 3 "" H 3300 850 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S3
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S3
 U 1 1 59DC7214
 P 3850 850
 F 0 "S3" H 3850 1050 50  0000 C CNN
@@ -272,7 +238,7 @@ F 3 "" H 3850 850 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S2
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S2
 U 1 1 59DC721A
 P 4400 850
 F 0 "S2" H 4400 1050 50  0000 C CNN
@@ -285,7 +251,7 @@ $EndComp
 Text Label 5400 1300 1    60   ~ 0
 LED0
 $Comp
-L PCA9685-TSSOP U1
+L PCA9685-TSSOP:PCA9685-TSSOP U1
 U 1 1 5A333097
 P 3850 3950
 F 0 "U1" H 3850 4965 50  0000 C CNN
@@ -296,7 +262,7 @@ F 3 "DOCUMENTATION" H 3850 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR06
+L power:+5V #PWR06
 U 1 1 5A333AC4
 P 3100 5550
 F 0 "#PWR06" H 3100 5400 50  0001 C CNN
@@ -307,7 +273,7 @@ F 3 "" H 3100 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR07
+L power:+5V #PWR07
 U 1 1 5A333B35
 P 4900 3000
 F 0 "#PWR07" H 4900 2850 50  0001 C CNN
@@ -318,7 +284,7 @@ F 3 "" H 4900 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR08
+L power:+5V #PWR08
 U 1 1 5A333BF6
 P 7000 1550
 F 0 "#PWR08" H 7000 1400 50  0001 C CNN
@@ -333,7 +299,7 @@ SCL
 Text Label 4750 3400 0    60   ~ 0
 SDA
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 5A3343CC
 P 2750 4950
 F 0 "#PWR09" H 2750 4700 50  0001 C CNN
@@ -344,7 +310,7 @@ F 3 "" H 2750 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X03 S1
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S1
 U 1 1 5A334C4C
 P 4950 850
 F 0 "S1" H 4950 1050 50  0000 C CNN
@@ -355,7 +321,7 @@ F 3 "" H 4950 850 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S0
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S0
 U 1 1 5A334C52
 P 5500 850
 F 0 "S0" H 5500 1050 50  0000 C CNN
@@ -380,7 +346,7 @@ LED6
 Text Label 1550 1300 1    60   ~ 0
 LED7
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 5A335839
 P 5800 2450
 F 0 "#PWR010" H 5800 2450 30  0001 C CNN
@@ -391,7 +357,7 @@ F 3 "" H 5800 2450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S15
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S15
 U 1 1 5A33583F
 P 1650 1900
 F 0 "S15" H 1650 2100 50  0000 C CNN
@@ -402,7 +368,7 @@ F 3 "" H 1650 1900 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S14
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S14
 U 1 1 5A335845
 P 2200 1900
 F 0 "S14" H 2200 2100 50  0000 C CNN
@@ -413,7 +379,7 @@ F 3 "" H 2200 1900 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S13
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S13
 U 1 1 5A33584B
 P 2750 1900
 F 0 "S13" H 2750 2100 50  0000 C CNN
@@ -424,7 +390,7 @@ F 3 "" H 2750 1900 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S12
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S12
 U 1 1 5A335857
 P 3300 1900
 F 0 "S12" H 3300 2100 50  0000 C CNN
@@ -435,7 +401,7 @@ F 3 "" H 3300 1900 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S11
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S11
 U 1 1 5A33585D
 P 3850 1900
 F 0 "S11" H 3850 2100 50  0000 C CNN
@@ -446,7 +412,7 @@ F 3 "" H 3850 1900 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X03 S10
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S10
 U 1 1 5A335863
 P 4400 1900
 F 0 "S10" H 4400 2100 50  0000 C CNN
@@ -459,7 +425,7 @@ $EndComp
 Text Label 5400 2350 1    60   ~ 0
 LED8
 $Comp
-L CONN_01X03 S9
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S9
 U 1 1 5A335887
 P 4950 1900
 F 0 "S9" H 4950 2100 50  0000 C CNN
@@ -484,7 +450,7 @@ LED14
 Text Label 1550 2350 1    60   ~ 0
 LED15
 $Comp
-L CONN_01X03 S8
+L BrainDamage-rescue:CONN_01X03-RESCUE-BrainDamage S8
 U 1 1 5A33588D
 P 5500 1900
 F 0 "S8" H 5500 2100 50  0000 C CNN
@@ -527,7 +493,7 @@ LED14
 Text Label 5000 3900 2    60   ~ 0
 LED15
 $Comp
-L LED-RESCUE-uselessPCB D2
+L BrainDamage-rescue:LED-RESCUE-uselessPCB-RESCUE-BrainDamage D2
 U 1 1 5A3A43A2
 P 4350 6400
 F 0 "D2" H 4350 6500 50  0000 C CNN
@@ -538,7 +504,7 @@ F 3 "~" H 4350 6400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R-RESCUE-uselessPCB R2
+L BrainDamage-rescue:R-RESCUE-uselessPCB-RESCUE-BrainDamage R2
 U 1 1 5A3A43A8
 P 3600 6400
 F 0 "R2" V 3680 6400 40  0000 C CNN
@@ -549,7 +515,7 @@ F 3 "~" H 3600 6400 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 5A3A43AE
 P 4750 6600
 F 0 "#PWR011" H 4750 6600 30  0001 C CNN
@@ -562,7 +528,7 @@ $EndComp
 Text Label 3150 6400 0    60   ~ 0
 SCK
 $Comp
-L AVR-ISP-10 CON1
+L atmel:AVR-ISP-10 CON1
 U 1 1 5A3A5B80
 P 7000 5150
 F 0 "CON1" H 6859 5605 50  0000 C CNN
@@ -573,7 +539,7 @@ F 3 "" H 7000 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 5A3A6DDC
 P 7700 5500
 F 0 "#PWR012" H 7700 5250 50  0001 C CNN
@@ -584,7 +550,7 @@ F 3 "" H 7700 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR013
+L power:+5V #PWR013
 U 1 1 5A550EB7
 P 1250 2450
 F 0 "#PWR013" H 1250 2300 50  0001 C CNN
@@ -595,7 +561,7 @@ F 3 "" H 1250 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR014
+L power:+5V #PWR014
 U 1 1 5A550F10
 P 1250 1400
 F 0 "#PWR014" H 1250 1250 50  0001 C CNN
@@ -622,7 +588,7 @@ A5
 Text Label 4750 3800 0    60   ~ 0
 OE
 $Comp
-L +5V #PWR015
+L power:+5V #PWR015
 U 1 1 5A5908E8
 P 7700 4800
 F 0 "#PWR015" H 7700 4650 50  0001 C CNN
@@ -645,7 +611,7 @@ PB1
 Text Label 9350 1900 0    60   ~ 0
 PB2
 $Comp
-L R R3
+L device:R R3
 U 1 1 5A5973A8
 P 5100 3200
 F 0 "R3" V 5180 3200 50  0000 C CNN
@@ -656,7 +622,7 @@ F 3 "" H 5100 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L device:R R5
 U 1 1 5A5974EA
 P 5300 3200
 F 0 "R5" V 5380 3200 50  0000 C CNN
@@ -667,7 +633,7 @@ F 3 "" H 5300 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L device:R R4
 U 1 1 5A598A8A
 P 5250 3800
 F 0 "R4" V 5330 3800 50  0000 C CNN
@@ -678,7 +644,7 @@ F 3 "" H 5250 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR016
+L power:GND #PWR016
 U 1 1 5A5996F8
 P 5500 3900
 F 0 "#PWR016" H 5500 3900 30  0001 C CNN
@@ -689,7 +655,7 @@ F 3 "" H 5500 3900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_2P J1
+L BrainDamage-rescue:TEST_2P-RESCUE-BrainDamage J1
 U 1 1 5A59BEDE
 P 2500 3300
 F 0 "J1" H 2500 3360 50  0000 C CNN
@@ -700,7 +666,7 @@ F 3 "" H 2500 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_2P J2
+L BrainDamage-rescue:TEST_2P-RESCUE-BrainDamage J2
 U 1 1 5A59C06E
 P 2500 3400
 F 0 "J2" H 2500 3460 50  0000 C CNN
@@ -711,7 +677,7 @@ F 3 "" H 2500 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_2P J3
+L BrainDamage-rescue:TEST_2P-RESCUE-BrainDamage J3
 U 1 1 5A59C0E2
 P 2500 3500
 F 0 "J3" H 2500 3560 50  0000 C CNN
@@ -722,7 +688,7 @@ F 3 "" H 2500 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_2P J4
+L BrainDamage-rescue:TEST_2P-RESCUE-BrainDamage J4
 U 1 1 5A59C15D
 P 2500 3600
 F 0 "J4" H 2500 3660 50  0000 C CNN
@@ -733,7 +699,7 @@ F 3 "" H 2500 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_2P J5
+L BrainDamage-rescue:TEST_2P-RESCUE-BrainDamage J5
 U 1 1 5A59C1D7
 P 2500 3700
 F 0 "J5" H 2500 3760 50  0000 C CNN
@@ -744,7 +710,7 @@ F 3 "" H 2500 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_2P J6
+L BrainDamage-rescue:TEST_2P-RESCUE-BrainDamage J6
 U 1 1 5A59C3FB
 P 5200 3700
 F 0 "J6" H 5200 3760 50  0000 C CNN
@@ -759,7 +725,7 @@ ADC7
 Text Label 10100 2350 0    60   ~ 0
 ADC6
 $Comp
-L +5V #PWR017
+L power:+5V #PWR017
 U 1 1 5A5E573C
 P 10250 3200
 F 0 "#PWR017" H 10250 3050 50  0001 C CNN
@@ -770,7 +736,7 @@ F 3 "" H 10250 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 5A5E5A67
 P 10150 2950
 F 0 "#PWR018" H 10150 2950 30  0001 C CNN
@@ -781,18 +747,18 @@ F 3 "" H 10150 2950 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Conn_01x05 J7
+L BrainDamage-rescue:Conn_01x05-RESCUE-BrainDamage J7
 U 1 1 5A5E77F3
 P 1200 6550
 F 0 "J7" H 1200 6850 50  0000 C CNN
 F 1 "15A" H 1200 6250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x05_Pitch2.54mm" H 1200 6550 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 1200 6550 50  0001 C CNN
 F 3 "" H 1200 6550 50  0001 C CNN
 	1    1200 6550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04 J8
+L BrainDamage-rescue:Conn_01x04-RESCUE-BrainDamage J8
 U 1 1 5A5F82FB
 P 6150 7000
 F 0 "J8" H 6150 7200 50  0000 C CNN
@@ -803,7 +769,7 @@ F 3 "" H 6150 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R7
+L device:R R7
 U 1 1 5A5F8BC4
 P 5350 7200
 F 0 "R7" V 5430 7200 50  0000 C CNN
@@ -814,7 +780,7 @@ F 3 "" H 5350 7200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R9
+L device:R R9
 U 1 1 5A5F8C5D
 P 5700 7350
 F 0 "R9" V 5780 7350 50  0000 C CNN
@@ -825,7 +791,7 @@ F 3 "" H 5700 7350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR019
+L power:GND #PWR019
 U 1 1 5A5F998A
 P 5500 7000
 F 0 "#PWR019" H 5500 7000 30  0001 C CNN
@@ -836,7 +802,7 @@ F 3 "" H 5500 7000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +5V #PWR020
+L power:+5V #PWR020
 U 1 1 5A5F9B08
 P 5500 6900
 F 0 "#PWR020" H 5500 6750 50  0001 C CNN
@@ -851,7 +817,7 @@ TXB
 Text Label 5000 7200 0    60   ~ 0
 RXB
 $Comp
-L GND #PWR021
+L power:GND #PWR021
 U 1 1 5A5FA96F
 P 5700 7600
 F 0 "#PWR021" H 5700 7600 30  0001 C CNN
@@ -866,7 +832,7 @@ RXB
 Text Label 9350 3600 0    60   ~ 0
 TXB
 $Comp
-L C C2
+L device:C C2
 U 1 1 5A7600D6
 P 5750 2600
 F 0 "C2" H 5775 2700 50  0000 L CNN
@@ -877,7 +843,7 @@ F 3 "" H 5750 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L device:C C1
 U 1 1 5A761761
 P 5750 1550
 F 0 "C1" H 5775 1650 50  0000 L CNN
@@ -888,7 +854,7 @@ F 3 "" H 5750 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L device:C C3
 U 1 1 5A762944
 P 7000 2150
 F 0 "C3" H 7025 2250 50  0000 L CNN
@@ -899,7 +865,7 @@ F 3 "" H 7000 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L power:GND #PWR022
 U 1 1 5A762BAE
 P 7000 2400
 F 0 "#PWR022" H 7000 2400 30  0001 C CNN
@@ -910,7 +876,7 @@ F 3 "" H 7000 2400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CH340G U2
+L ch34x:CH340G U2
 U 1 1 5A75DDD9
 P 10000 5150
 F 0 "U2" H 10000 4600 60  0000 C CNN
@@ -928,7 +894,7 @@ NoConn ~ 10450 5100
 NoConn ~ 10450 5000
 NoConn ~ 10450 4900
 $Comp
-L CRYSTAL_SMD X2
+L BrainDamage-rescue:CRYSTAL_SMD-RESCUE-BrainDamage X2
 U 1 1 5A75F719
 P 8950 5600
 F 0 "X2" H 8950 5690 50  0000 C CNN
@@ -939,7 +905,7 @@ F 3 "" H 8950 5600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR023
+L power:GND #PWR023
 U 1 1 5A75FB53
 P 8600 5800
 F 0 "#PWR023" H 8600 5550 50  0001 C CNN
@@ -950,7 +916,7 @@ F 3 "" H 8600 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR024
+L power:GND #PWR024
 U 1 1 5A76058D
 P 9050 4800
 F 0 "#PWR024" H 9050 4550 50  0001 C CNN
@@ -965,7 +931,7 @@ RX
 Text Label 9300 5000 0    60   ~ 0
 TX
 $Comp
-L +5V #PWR025
+L power:+5V #PWR025
 U 1 1 5A7626D7
 P 10900 4700
 F 0 "#PWR025" H 10900 4550 50  0001 C CNN
@@ -976,7 +942,7 @@ F 3 "" H 10900 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L device:C C4
 U 1 1 5A7642F0
 P 9000 5100
 F 0 "C4" H 9025 5200 50  0000 L CNN
@@ -1097,7 +1063,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 3500 9650 3500
 Wire Wire Line
-	7000 3800 7000 4150
+	7000 3800 7000 3900
 Wire Wire Line
 	7300 3900 7000 3900
 Wire Wire Line
@@ -1131,7 +1097,7 @@ Connection ~ 7000 1700
 Wire Wire Line
 	7000 2000 7300 2000
 Wire Wire Line
-	7000 1550 7000 2000
+	7000 1550 7000 1700
 Wire Wire Line
 	7300 1700 7000 1700
 Wire Wire Line
@@ -1146,7 +1112,7 @@ Wire Wire Line
 	5400 1050 5400 1300
 Connection ~ 4950 1500
 Wire Wire Line
-	5500 1050 5500 1700
+	5500 1050 5500 1500
 Wire Wire Line
 	4950 1500 4950 1050
 Connection ~ 5600 1400
@@ -1156,9 +1122,9 @@ Connection ~ 5050 1400
 Wire Wire Line
 	5050 1050 5050 1400
 Wire Wire Line
-	1750 1400 5800 1400
+	1750 1400 2300 1400
 Wire Wire Line
-	1250 1500 5500 1500
+	1250 1500 1650 1500
 Connection ~ 2750 2550
 Connection ~ 3400 2450
 Wire Wire Line
@@ -1213,7 +1179,7 @@ Wire Wire Line
 	5400 2100 5400 2350
 Connection ~ 4950 2550
 Wire Wire Line
-	5500 2100 5500 2750
+	5500 2100 5500 2550
 Wire Wire Line
 	4950 2550 4950 2100
 Connection ~ 5600 2450
@@ -1223,9 +1189,9 @@ Connection ~ 5050 2450
 Wire Wire Line
 	5050 2100 5050 2450
 Wire Wire Line
-	1750 2450 5800 2450
+	1750 2450 2300 2450
 Wire Wire Line
-	1250 2550 5500 2550
+	1250 2550 1650 2550
 Wire Wire Line
 	4600 3900 5000 3900
 Wire Wire Line
@@ -1281,7 +1247,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 5050 7050 5050
 Wire Wire Line
-	7700 5050 7700 5500
+	7700 5050 7700 5150
 Wire Wire Line
 	7700 4800 7700 4950
 Wire Wire Line
@@ -1320,7 +1286,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 3050 5300 3000
 Wire Wire Line
-	5500 3600 5500 3900
+	5500 3600 5500 3800
 Wire Wire Line
 	5500 3800 5400 3800
 Connection ~ 5500 3800
@@ -1329,11 +1295,11 @@ Wire Wire Line
 Wire Wire Line
 	5600 3700 5600 3000
 Wire Wire Line
-	5600 3000 2300 3000
+	5600 3000 5300 3000
 Connection ~ 5100 3000
 Connection ~ 5300 3000
 Wire Wire Line
-	2300 3000 2300 3700
+	2300 3000 2300 3300
 Connection ~ 4900 3000
 Connection ~ 2300 3500
 Wire Wire Line
@@ -1341,7 +1307,6 @@ Wire Wire Line
 Connection ~ 2300 3300
 Connection ~ 2300 3400
 Connection ~ 2300 3600
-Connection ~ 2300 3700
 Wire Wire Line
 	9200 2950 9650 2950
 Wire Wire Line
@@ -1355,7 +1320,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 7000 5950 7000
 Wire Wire Line
-	5950 7200 5500 7200
+	5950 7200 5700 7200
 Wire Wire Line
 	5950 7100 5500 7100
 Wire Wire Line
@@ -1389,13 +1354,13 @@ Wire Wire Line
 Wire Wire Line
 	8600 5600 8600 5800
 Wire Wire Line
-	9550 4800 9050 4800
+	9550 4800 9450 4800
 Wire Wire Line
 	9550 4900 9250 4900
 Wire Wire Line
 	9550 5000 9250 5000
 Wire Wire Line
-	10450 4800 10900 4800
+	10450 4800 10600 4800
 Wire Wire Line
 	9550 5200 8650 5200
 Wire Wire Line
@@ -1410,7 +1375,7 @@ Wire Wire Line
 	9150 4950 9150 4800
 Connection ~ 9150 4800
 $Comp
-L C C5
+L device:C C5
 U 1 1 5A765BD9
 P 10000 4600
 F 0 "C5" H 10025 4700 50  0000 L CNN
@@ -1431,7 +1396,7 @@ Wire Wire Line
 	10600 4600 10600 4800
 Connection ~ 10600 4800
 $Comp
-L USB_OTG J9
+L BrainDamage-rescue:USB_OTG-RESCUE-BrainDamage J9
 U 1 1 5A7667B2
 P 8350 5200
 F 0 "J9" H 8150 5650 50  0000 L CNN
@@ -1442,7 +1407,7 @@ F 3 "" H 8500 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR026
+L power:GND #PWR026
 U 1 1 5A767259
 P 8350 5800
 F 0 "#PWR026" H 8350 5550 50  0001 C CNN
@@ -1458,11 +1423,11 @@ Wire Wire Line
 	8350 5700 8250 5700
 Connection ~ 8350 5700
 Wire Wire Line
-	8350 5800 8350 5600
+	8350 5800 8350 5700
 Wire Wire Line
 	10900 4800 10900 4700
 $Comp
-L +5V #PWR027
+L power:+5V #PWR027
 U 1 1 5A76A712
 P 8700 4850
 F 0 "#PWR027" H 8700 4700 50  0001 C CNN
@@ -1477,7 +1442,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 5000 8700 4850
 $Comp
-L Conn_01x02 J10
+L BrainDamage-rescue:Conn_01x02-RESCUE-BrainDamage J10
 U 1 1 5A78AFE5
 P 900 5100
 F 0 "J10" H 900 5200 50  0000 C CNN
@@ -1488,7 +1453,7 @@ F 3 "" H 900 5100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR028
+L power:GND #PWR028
 U 1 1 5A78C962
 P 1200 5250
 F 0 "#PWR028" H 1200 5000 50  0001 C CNN
@@ -1507,7 +1472,7 @@ Wire Wire Line
 Text Label 1100 5000 0    60   ~ 0
 BATT+
 $Comp
-L AP1117-50 U3
+L regul:AP1117-50 U3
 U 1 1 5A7A4888
 P 1650 5000
 F 0 "U3" H 1500 5125 50  0000 C CNN
@@ -1518,7 +1483,7 @@ F 3 "" H 1750 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR029
+L power:GND #PWR029
 U 1 1 5A7A53E9
 P 1650 5400
 F 0 "#PWR029" H 1650 5150 50  0001 C CNN
@@ -1531,11 +1496,11 @@ $EndComp
 Wire Wire Line
 	1650 5400 1650 5300
 Wire Wire Line
-	1950 5000 2200 5000
+	1950 5000 2050 5000
 Wire Wire Line
 	2200 5000 2200 4800
 $Comp
-L +5V #PWR030
+L power:+5V #PWR030
 U 1 1 5A7A5F08
 P 2200 4800
 F 0 "#PWR030" H 2200 4650 50  0001 C CNN
@@ -1553,7 +1518,7 @@ Wire Wire Line
 	2050 5050 2050 5000
 Connection ~ 2050 5000
 $Comp
-L C C6
+L device:C C6
 U 1 1 5A7AA908
 P 2050 5200
 F 0 "C6" H 2075 5300 50  0000 L CNN
@@ -1564,7 +1529,7 @@ F 3 "" H 2050 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04 J12
+L BrainDamage-rescue:Conn_01x04-RESCUE-BrainDamage J12
 U 1 1 5A7AEC3C
 P 2150 6800
 F 0 "J12" H 2150 7000 50  0000 C CNN
@@ -1575,7 +1540,7 @@ F 3 "" H 2150 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04 J11
+L BrainDamage-rescue:Conn_01x04-RESCUE-BrainDamage J11
 U 1 1 5A7AF5EB
 P 2150 6200
 F 0 "J11" H 2150 6400 50  0000 C CNN
@@ -1586,7 +1551,7 @@ F 3 "" H 2150 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR031
+L power:GND #PWR031
 U 1 1 5A7B0E33
 P 1650 6800
 F 0 "#PWR031" H 1650 6550 50  0001 C CNN
@@ -1597,14 +1562,14 @@ F 3 "" H 1650 6800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1950 6800 1650 6800
+	1950 6800 1700 6800
 Wire Wire Line
 	1950 6700 1700 6700
 Wire Wire Line
 	1700 6700 1700 6800
 Connection ~ 1700 6800
 $Comp
-L GND #PWR032
+L power:GND #PWR032
 U 1 1 5A7B18DE
 P 1650 6400
 F 0 "#PWR032" H 1650 6150 50  0001 C CNN
@@ -1615,7 +1580,7 @@ F 3 "" H 1650 6400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1950 6400 1650 6400
+	1950 6400 1700 6400
 Wire Wire Line
 	1950 6300 1700 6300
 Wire Wire Line
@@ -1630,7 +1595,7 @@ BATT+
 Text Label 1700 6900 0    60   ~ 0
 BATT+
 $Comp
-L +5V #PWR033
+L power:+5V #PWR033
 U 1 1 5A7B3E06
 P 1650 5950
 F 0 "#PWR033" H 1650 5800 50  0001 C CNN
@@ -1643,7 +1608,7 @@ $EndComp
 Wire Wire Line
 	1950 6100 1650 6100
 Wire Wire Line
-	1650 5950 1650 6200
+	1650 5950 1650 6100
 Wire Wire Line
 	1650 6200 1950 6200
 Connection ~ 1650 6100
@@ -1652,13 +1617,11 @@ Wire Wire Line
 Wire Wire Line
 	1000 6350 750  6350
 Wire Wire Line
-	1000 6650 750  6650
-Wire Wire Line
 	1000 6550 750  6550
 Wire Wire Line
 	1000 6750 750  6750
 $Comp
-L GND #PWR034
+L power:GND #PWR034
 U 1 1 5A7B995B
 P 750 6550
 F 0 "#PWR034" H 750 6300 50  0001 C CNN
@@ -1670,10 +1633,120 @@ F 3 "" H 750 6550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	750  6550 750  6450
-NoConn ~ 750  6650
+NoConn ~ 1000 6650
 Text Label 800  6750 0    60   ~ 0
 PG
 NoConn ~ 750  6350
 Text Label 9350 4000 0    60   ~ 0
 PG
+Wire Wire Line
+	2750 1500 3300 1500
+Wire Wire Line
+	3400 1400 3950 1400
+Wire Wire Line
+	3850 1500 4400 1500
+Wire Wire Line
+	3300 1500 3850 1500
+Wire Wire Line
+	4500 1400 5050 1400
+Wire Wire Line
+	3950 1400 4500 1400
+Wire Wire Line
+	7000 3900 7000 4000
+Wire Wire Line
+	7000 1800 7000 2000
+Wire Wire Line
+	2200 1500 2750 1500
+Wire Wire Line
+	1650 1500 2200 1500
+Wire Wire Line
+	2850 1400 3400 1400
+Wire Wire Line
+	2300 1400 2850 1400
+Wire Wire Line
+	7000 4000 7000 4150
+Wire Wire Line
+	7000 1700 7000 1800
+Wire Wire Line
+	4950 1500 5500 1500
+Wire Wire Line
+	5600 1400 5750 1400
+Wire Wire Line
+	5050 1400 5600 1400
+Wire Wire Line
+	2750 2550 3300 2550
+Wire Wire Line
+	3400 2450 3950 2450
+Wire Wire Line
+	3850 2550 4400 2550
+Wire Wire Line
+	3300 2550 3850 2550
+Wire Wire Line
+	4500 2450 5050 2450
+Wire Wire Line
+	3950 2450 4500 2450
+Wire Wire Line
+	2200 2550 2750 2550
+Wire Wire Line
+	1650 2550 2200 2550
+Wire Wire Line
+	2850 2450 3400 2450
+Wire Wire Line
+	2300 2450 2850 2450
+Wire Wire Line
+	4950 2550 5500 2550
+Wire Wire Line
+	5600 2450 5750 2450
+Wire Wire Line
+	5050 2450 5600 2450
+Wire Wire Line
+	7700 5150 7700 5250
+Wire Wire Line
+	7700 5250 7700 5350
+Wire Wire Line
+	7700 5350 7700 5500
+Wire Wire Line
+	4400 2550 4950 2550
+Wire Wire Line
+	4400 1500 4950 1500
+Wire Wire Line
+	5500 3800 5500 3900
+Wire Wire Line
+	5100 3000 4900 3000
+Wire Wire Line
+	5300 3000 5100 3000
+Wire Wire Line
+	4900 3000 2300 3000
+Wire Wire Line
+	2300 3500 2300 3600
+Wire Wire Line
+	2300 3400 2300 3500
+Wire Wire Line
+	2300 3600 2300 3700
+Wire Wire Line
+	5700 7200 5500 7200
+Wire Wire Line
+	5750 2450 5800 2450
+Wire Wire Line
+	5500 2550 5500 2750
+Wire Wire Line
+	5500 1500 5500 1700
+Wire Wire Line
+	5750 1400 5800 1400
+Wire Wire Line
+	9150 4800 9050 4800
+Wire Wire Line
+	9450 4800 9150 4800
+Wire Wire Line
+	10600 4800 10900 4800
+Wire Wire Line
+	8350 5700 8350 5600
+Wire Wire Line
+	2050 5000 2200 5000
+Wire Wire Line
+	1700 6800 1650 6800
+Wire Wire Line
+	1700 6400 1650 6400
+Wire Wire Line
+	1650 6100 1650 6200
 $EndSCHEMATC
