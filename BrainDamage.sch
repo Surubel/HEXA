@@ -1766,4 +1766,18 @@ Wire Wire Line
 Text Label 10600 5100 0    60   ~ 0
 RESET
 Connection ~ 1200 3950
+$Comp
+L device:R R6
+U 1 1 5A9C29D4
+P 10850 4950
+F 0 "R6" V 10930 4950 50  0000 C CNN
+F 1 "10K" V 10850 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10780 4950 50  0001 C CNN
+F 3 "" H 10850 4950 50  0001 C CNN
+	1    10850 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 4800 10600 4800
+Connection ~ 10600 4800
 $EndSCHEMATC
